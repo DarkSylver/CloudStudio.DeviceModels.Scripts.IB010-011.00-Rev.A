@@ -24,19 +24,19 @@ function getEndpoints(deviceAddress, endpoints)
   // temperature sensor, while the second one is a carbon dioxide sensor.
 
   var e = endpoints.addEndpoint("1", "Contador de Ingreso vs Ultimo Reporte", endpointType.genericSensor);  
-  e.variableTypeId = 1107;
+  e.variableTypeId = 1036;
   e.accessType = endpointAccessType.readWrite;
   var e = endpoints.addEndpoint("2", "Contador de Egreso vs Ultimo Reporte", endpointType.genericSensor);  
-  e.variableTypeId = 1107;
+  e.variableTypeId = 1036;
   e.accessType = endpointAccessType.readWrite;
   var e = endpoints.addEndpoint("3", "Total Contador de Ingreso", endpointType.genericSensor);  
-  e.variableTypeId = 1107;
+  e.variableTypeId = 1036;
   e.accessType = endpointAccessType.readWrite;
   var e = endpoints.addEndpoint("4", "Total Contador de Egreso", endpointType.genericSensor); 
-  e.variableTypeId = 1107;
+  e.variableTypeId = 1036;
   e.accessType = endpointAccessType.readWrite;
   var e = endpoints.addEndpoint("5", "Total", endpointType.genericSensor); 
-  e.variableTypeId = 1107;
+  e.variableTypeId = 1036;
   e.accessType = endpointAccessType.readWrite;
   endpoints.addEndpoint("6", "Bateria", endpointType.voltageSensor);
 }
